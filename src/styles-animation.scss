@@ -1,0 +1,44 @@
+@-webkit-keyframes rotateWord {
+  0%,
+  100%,
+  80% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  47%,
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+}
+
+@keyframes rotateWord {
+  0%,
+  100%,
+  80% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  47%,
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}

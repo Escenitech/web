@@ -1,0 +1,80 @@
+// ESCENIT PALETTE 2
+// --------------------------------------------------
+$color-dark:              #b4005f;
+$color-dark-contrast:     #ff5abc;
+
+$color-primary:           #582D79;
+$color-primary-contrast:  #8E44AD;
+
+$color-accent:            #ec008c;
+
+$color-light:             #dadef0;
+$color-light-contrast:    #e3e6f4;
+
+$color-text:              #3f4045;
+$color-text-contrast:     #6e6f73;
+
+$color-black:             #000;
+$color-white:             #fff;
+$color-box:               #f4f5fb;
+$color-box-contrast:      #e9ecf7;
+$color-box-accent:        #c7b3dd;
+// Map Colors
+$colors: (
+        dark: $color-dark,
+        dark-contrast: $color-dark-contrast,
+        primary: $color-primary,
+        primary-contrast: $color-primary-contrast,
+        accent: $color-accent,
+        light: $color-light,
+        light-contrast: $color-light-contrast,
+        text: $color-text,
+        text-contrast: $color-text-contrast,
+        black: $color-black,
+        white: $color-white,
+        box: $color-box,
+        box-contrast: $color-box-contrast,
+        box-accent: $color-box-accent,
+);
+
+$mat-escenit: (
+        50: #dadef0, // SP - BODY
+        100: #FF0000, // ::UNUSED?
+        200: $color-primary-contrast, // PRIMARY-LIGHTER $color-primary-contrast
+        300: #FF0000, // ::UNUSED?
+        400: #FF0000, // ::UNUSED?
+        500: $color-primary, // PRIMARY-DEFAULT $color-primary
+        600: #FF0000, // ::UNUSED?
+        700: #FF0000, // ::UNUSED?
+        800: $color-dark-contrast, // $color-dark-contrast
+        900: $color-dark, // PRIMARY-DARKER $color-dark
+        A100: #FF0000, // ::UNUSED?
+        A200: $color-accent, // WARNING-DEFAULT $color-accent
+        A400: #FF0000, // ::UNUSED?
+        A700: #FF0000, // ::UNUSED?
+        contrast: (// TEXT COLORS
+                50: $black-87-opacity,
+                100: #FF0000, // ::UNUSED?
+                200: $black-87-opacity,
+                300: #FF0000, // ::UNUSED?
+                400: #FF0000, // ::UNUSED?
+                500: $white-87-opacity,
+                600: #FF0000, // ::UNUSED?
+                700: #FF0000, // ::UNUSED?
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: #FF0000, // ::UNUSED?
+                A200: #fff, // WARNING-TEXT
+                A400: #FF0000, // ::UNUSED?
+                A700: #FF0000, // ::UNUSED?
+        )
+);
+$app-primary: mat-palette($mat-escenit, 500, 200, 500);
+$app-accent: mat-palette($mat-escenit, 900, 800, 900);
+$app-warn: mat-palette($mat-escenit, A200, A200, A200);
+
+//  $app-primary: mat-palette($mat-pink, 800, 300, 900);
+// $app-accent: mat-palette($mat-light-blue);
+// $app-warn: mat-palette($mat-pink, 600);
+
+$anms-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
