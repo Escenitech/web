@@ -1,30 +1,30 @@
 // MAIN FONT
-@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
 
-@import 'styles-variables.scss';
+@import "styles-variables.scss";
 
-@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
-@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
-@import '../node_modules/bootstrap/scss/_utilities.scss';
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/_utilities.scss";
+@import "../node_modules/bootstrap/scss/_tables.scss";
 // @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'styles-reset.scss';
+@import "styles-reset.scss";
 
-@import '../node_modules/@angular/material/theming';
+@import "../node_modules/@angular/material/theming";
 
 @include mat-core();
 
-@import 'themes/default-theme.scss';
+@import "themes/default-theme.scss";
 
-@import 'styles-reset.scss-theme';
-@import 'styles-animation.scss';
-@import 'app/app.component.scss-theme';
-@import 'app/static/home/home.component.scss-theme.scss';
-
+@import "styles-reset.scss-theme";
+@import "styles-animation.scss";
+@import "app/app.component.scss-theme";
+@import "app/static/home/home.component.scss-theme.scss";
 
 @mixin custom-components-theme($theme) {
-   @include anms-styles-reset-theme($theme);
-   @include app-component-theme($theme);
-   @include app-home-component-theme($theme);
+  @include anms-styles-reset-theme($theme);
+  @include app-component-theme($theme);
+  @include app-home-component-theme($theme);
   // @include anms-about-component-theme($theme);
   // @include anms-big-input-component-theme($theme);
   // @include anms-notifications-component-theme($theme);
@@ -40,7 +40,8 @@
   @include custom-components-theme($anms-theme);
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 .app-loading {
@@ -70,22 +71,10 @@ body, html {
   stroke-linecap: round;
   stroke: #ddd;
 }
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+
+.font-base {
+  font-family: $font-family;
 }
-@keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124px;
-  }
+.font-size-small{
+  font-size: $font-size-small;
 }

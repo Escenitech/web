@@ -19,23 +19,11 @@ $color-white:             #fff;
 $color-box:               #f4f5fb;
 $color-box-contrast:      #e9ecf7;
 $color-box-accent:        #c7b3dd;
-// Map Colors
-$colors: (
-        dark: $color-dark,
-        dark-contrast: $color-dark-contrast,
-        primary: $color-primary,
-        primary-contrast: $color-primary-contrast,
-        accent: $color-accent,
-        light: $color-light,
-        light-contrast: $color-light-contrast,
-        text: $color-text,
-        text-contrast: $color-text-contrast,
-        black: $color-black,
-        white: $color-white,
-        box: $color-box,
-        box-contrast: $color-box-contrast,
-        box-accent: $color-box-accent,
-);
+
+$color-dark-background:   #202735;
+$color-dark-background-text: lighten($color-dark-background, 30%);
+
+$color-text-light:        #A5A7B2;
 
 $mat-escenit: (
         50: #dadef0, // SP - BODY
@@ -52,6 +40,11 @@ $mat-escenit: (
         A200: $color-accent, // WARNING-DEFAULT $color-accent
         A400: #FF0000, // ::UNUSED?
         A700: #FF0000, // ::UNUSED?
+        // CUSTOM
+        darkBackground: $color-dark-background,
+        darkBackgroundText: $color-dark-background-text,
+        color-text-light:             $color-text-light,
+        white: #fff,
         contrast: (// TEXT COLORS
                 50: $black-87-opacity,
                 100: #FF0000, // ::UNUSED?

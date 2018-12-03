@@ -16,16 +16,15 @@ export class AppComponent {
   version = env.versions.app;
   year = new Date().getFullYear();
   logo = require('../assets/favicon.svg');
+  logoBlack = require('../assets/escenitech-black.svg');
 
   theme = env.themeName;
 
   navigation = [
-    { link: 'home', label: 'app.menu.home' },
-    { link: 'about', label: 'app.menu.about' },
+    // { link: 'about', label: 'app.menu.about' },
   ];
   navigationSideMenu = [
-    ...this.navigation,
-    { link: 'settings', label: 'anms.menu.settings' }
+    ...this.navigation
   ];
 
   constructor(translate: TranslateService) {

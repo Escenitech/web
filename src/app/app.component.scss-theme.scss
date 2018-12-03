@@ -10,7 +10,7 @@
       mat-toolbar {
         // background: rgba(mat-color($primary), .7 );
         .branding {
-          color: #fff;
+          color: mat-color($primary, white);
         }
       }  
     }
@@ -41,16 +41,44 @@
     }
 
     .footer {
-      color: mat-color($primary, lighter);
-      background-color: mat-color($primary, darker);
-
-      .links,
-      .signature {
-        a {
-          color: mat-color($primary, lighter);
-          &:hover {
-            color: mat-color($accent);
+      color: mat-color($primary, color-text-light);
+      background-color: mat-color($primary, darkBackground);
+      .foter-content-wrap{
+        border-color: lighten(mat-color($primary, darkBackground), 6%) !important;
+        h3{
+          color: mat-color($primary, white);
+          position: relative;
+          margin-bottom: 20px;
+          &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -4px;
+            width: 100px;
+            height: 4px;
+            background-color: mat-color($primary, lighter);
           }
+        }
+        a{
+          color: mat-color($primary, color-text-light);
+        }
+        fa-icon{
+          border-color: lighten(mat-color($primary, darkBackground), 6%) !important;
+        }
+      }
+      
+
+      .copy{
+        border-color: darken(mat-color($primary, darkBackground), 6%) !important;
+        background-color: darken(mat-color($primary, darkBackground), 15%) !important;
+      }
+      .social-links{
+        border-bottom-color: darken(mat-color($primary, darkBackground), 3%) !important;
+      }
+      a {
+        color: mat-color($primary, lighter);
+        &:hover {
+          color: mat-color($accent);
         }
       }
     }
