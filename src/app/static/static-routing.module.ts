@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { LegalComponent } from './legal/legal.component';
+import { JobsComponent } from  './jobs/jobs.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,11 @@ const routes: Routes = [
     path: 'legal',
     component: LegalComponent,
     data: { title: 'app.menufooter.legal' }
+  },
+  {
+    path: 'jobs',
+    component: JobsComponent,
+    data: { title: 'app.jobs' }
   }
 ];
 

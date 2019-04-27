@@ -6,7 +6,10 @@
   mat-sidenav-container {
     height: 100%;
     width: 100%;
-
+    .jobs{
+      width: 100%;
+      margin-bottom: $content-padding;
+    }
     .toolbar {
       position: fixed;
       width: 100%;
