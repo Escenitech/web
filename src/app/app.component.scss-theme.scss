@@ -5,6 +5,21 @@
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
 
+  h1{
+    //color: mat-color($primary, white);
+    position: relative;
+    margin-bottom: 20px;
+    &::after{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -4px;
+      width: 100px;
+      height: 4px;
+      background-color: mat-color($primary, lighter);
+    }
+  }
+
   mat-sidenav-container {
     .toolbar{
       mat-toolbar {
