@@ -31,7 +31,7 @@
         </mat-toolbar>
       </div>
       <div class="content" [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig.path">
-        <router-outlet #o="outlet" (activate)="onActivate($event)"></router-outlet>
+        <router-outlet #o="outlet" (activate)="onActivate()"></router-outlet>
       </div>
       <div class="footer mt-5">
         <div class="foter-content-wrap pt-3">
