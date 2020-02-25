@@ -2,7 +2,10 @@ import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {routeAnimations} from './core';
 import {environment as env} from '@env/environment';
-import {Router} from '@angular/router';
+import {NavigationEnd, Router} from '@angular/router';
+import {filter} from 'rxjs/operators';
+
+declare var gtag;
 
 @Component({
     selector: 'app-root',
@@ -22,7 +25,7 @@ export class AppComponent {
     theme = env.themeName;
 
     navigation = [
-        { link: 'jobs', label: 'app.menu.jobs' },
+        {link: 'jobs', label: 'app.menu.jobs'},
     ];
     navigationSideMenu = [
         ...this.navigation
@@ -36,6 +39,17 @@ export class AppComponent {
         translate.setDefaultLang('es');
         // the lang to use, if the lang isn't available, it will use the current loader to get them
         translate.use('es');
+        const navEndEvents$ = this.router.events
+            .pipe(
+                filter(event => event instanceof NavigationEnd)
+            );
+
+        navEndEvents$.subscribe((event: NavigationEnd) => {
+            gtag('config', 'UA-158962167-1', {
+                'page_path': event.urlAfterRedirects
+            });
+        });
+
     }
 
     onActivate() {
