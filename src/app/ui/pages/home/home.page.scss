@@ -1,0 +1,70 @@
+@import "../../../../theme/variables.scss";
+
+.site-banner {
+  background: url("../../../../assets/home3.jpg") 100% 100% / cover no-repeat;
+  height: 100vh;
+  margin-top: -$main-menu-height;
+  .banner-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    .banner-inner {
+      flex: 0 0 auto;
+      width: 100%;
+      h2 {
+        position: relative;
+        font-size: 250%;
+        margin-left: -20%;
+        font-family: $font-family;
+        .d-title {
+          display: inline;
+          text-indent: 10px;
+          span {
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+            color: #fff;
+            -webkit-animation: 4s linear infinite rotateWord;
+            animation: 4s linear infinite rotateWord;
+            &:nth-child(2) {
+              -webkit-animation-delay: 2s;
+              animation-delay: 2s;
+              color: #fff;
+            }
+            &:nth-child(3) {
+              -webkit-animation-delay: 4s;
+              animation-delay: 4s;
+              color: #fff;
+            }
+          }
+        }
+      }
+      @media (max-width: map-get($grid-breakpoints, lg)) {
+        h2 {
+          font-size: 250%;
+          margin-left: -40%;
+        }
+      }
+      @media (max-width: map-get($grid-breakpoints, md)) {
+        h2 {
+          font-size: 200%;
+          margin-left: -40%;
+        }
+      }
+      @media (max-width: map-get($grid-breakpoints, sm)) {
+        h2 {
+          font-size: 130%;
+          margin-left: -44%;
+        }
+      }
+    }
+  }
+}
+.features {
+  fa-icon {
+    font-size: 5rem;
+  }
+}
