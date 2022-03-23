@@ -7,7 +7,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AnimationsService } from './animations/animations.service';
 
-import { environment } from '@env/environment';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [],

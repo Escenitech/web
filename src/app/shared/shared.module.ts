@@ -92,6 +92,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatIconModule,
     FontAwesomeModule
   ]
 })

@@ -60,7 +60,7 @@ import { AnimationsService } from './animations.service';
       { optional: true }
     )
   ];
-  const STEPS_NONE = [];
+  const STEPS_NONE: any[] = [];
   const STEPS_PAGE = [STEPS_ALL[0], STEPS_ALL[2]];
   const STEPS_ELEMENTS = [STEPS_ALL[1], STEPS_ALL[3]];
   
