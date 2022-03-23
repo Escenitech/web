@@ -61,6 +61,6 @@ $font-size-small:            1rem;
 // OTHER
 $avatar-item-size:             40px;
 //scroll
-$scroll-horizontal-space:      $content-padding/1.2;
+$scroll-horizontal-space:      calc($content-padding/1.2);
 $scroll-horizontal-item-width: 28vw;
 $scroll-separation:            10px;
