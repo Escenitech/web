@@ -1,11 +1,12 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {routeAnimations} from './core';
-import {environment as env} from '@env/environment';
+import { environment as env } from 'src/environments/environment';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
+import { AppTranslateService } from './infrastructure/services/app/app-translate.service';
 
-declare var gtag;
+declare var gtag: any;
 
 @Component({
     selector: 'app-root',
@@ -19,8 +20,8 @@ export class AppComponent {
     envOwner = env.owner;
     version = env.versions.app;
     year = new Date().getFullYear();
-    logo = require('../assets/favicon.svg');
-    logoBlack = require('../assets/escenitech-black.svg');
+    // logo = require('../assets/favicon.svg');
+    // logoBlack = require('../assets/escenitech-black.svg');
 
     theme = env.themeName;
 
@@ -33,23 +34,9 @@ export class AppComponent {
 
     constructor(
         private router: Router,
-        translate: TranslateService
+        private translateService: AppTranslateService
     ) {
-        // this language will be used as a fallback when a translation isn't found in the current language
-        translate.setDefaultLang('es');
-        // the lang to use, if the lang isn't available, it will use the current loader to get them
-        translate.use('es');
-        const navEndEvents$ = this.router.events
-            .pipe(
-                filter(event => event instanceof NavigationEnd)
-            );
-
-        navEndEvents$.subscribe((event: NavigationEnd) => {
-            gtag('config', 'UA-158962167-1', {
-                'page_path': event.urlAfterRedirects
-            });
-        });
-
+        this.translateService.start();
     }
 
     onActivate() {
@@ -57,6 +44,6 @@ export class AppComponent {
         if (contentContainer) {
             contentContainer.scrollTo(0, 0);
         }
-        contentContainer.scrollTo(0, 0);
+        contentContainer?.scrollTo(0, 0);
     }
 }

@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, PageNotFoundComponent } from './static';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePage } from './ui/pages/home/home.page';
+import { PageNotFoundPage } from './ui/pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    data: { title: 'app.title' }
+    component: HomePage
   },
-  {path: '**', component: PageNotFoundComponent}
+  {
+    path: '**',
+    component: PageNotFoundPage
+  }
 ];
 
 @NgModule({
-  // useHash supports github.io demo page, remove in your app
   imports: [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-      // useHash: true,
-      // enableTracing: true
+      anchorScrolling: 'enabled'
     })
   ],
   exports: [RouterModule]
