@@ -20,25 +20,13 @@
         margin-left: -10%;
         font-family: $font-family;
         .d-title {
-          display: inline;
-          text-indent: 10px;
+          // display: inline;
+          // text-indent: 10px;
           span {
-            position: absolute;
             opacity: 0;
             overflow: hidden;
             color: #fff;
-            -webkit-animation: 4s linear infinite rotateWord;
-            animation: 4s linear infinite rotateWord;
-            &:nth-child(2) {
-              -webkit-animation-delay: 2s;
-              animation-delay: 2s;
-              color: #fff;
-            }
-            &:nth-child(3) {
-              -webkit-animation-delay: 4s;
-              animation-delay: 4s;
-              color: #fff;
-            }
+            text-align: center;
           }
         }
       }
