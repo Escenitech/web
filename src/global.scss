@@ -86,3 +86,59 @@ html {
 .text-center {
   text-align: center;
 }
+
+.page-title {
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  font-size: large;
+  font-weight: bold;
+}
+
+.description {
+  font-size: small;
+  font-weight: bold;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.space-between {
+  padding: 20px;
+}
+
+.w60 {
+  max-width: 60%;
+}
+
+hr {
+  border: 3px solid $color-primary;
+  width: 70%;
+  opacity: 100%;
+  margin: auto;
+}
+
+.bullet-point {
+  color: white;
+  background-color: $color-primary;
+  font-size: large;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 0;
+}
+
+.check-img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.section {
+  margin: 30px;
+}

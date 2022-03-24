@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePage } from './ui/pages/home/home.page';
 import { JobsPage } from './ui/pages/jobs/jobs.page';
+import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,7 +22,8 @@ export const createTranslateLoader = (http: HttpClient) =>
   declarations: [
     AppComponent,
     HomePage,
-    JobsPage
+    JobsPage,
+    WhatWeDoPage
     // PageNotFoundComponent
   ],
   imports: [

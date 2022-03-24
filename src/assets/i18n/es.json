@@ -11,5 +11,18 @@
     "app.home.slogan": "Dirige tu empresa a un nuevo horizonte",
     "app.home.best_solution_for_bussines": "¡Las mejores soluciones para las necesidades de su negocio!",
     "app.home.experienced_team_text": "Con un equipo de más de 15 años de experiencia en el sector, Escenitech ofrece a sus clientes una solución tecnológica a medida para adaptar su negocio al futuro.",
-    "app.footer.slogan" : "Somos una empresa tecnológica, experta en el desarrollo e implantación de soluciones Open Source, apasionados por la buenas practicas y las metodologías ágiles, queremos ayudar a nuestros clientes a crecer con nosotros."
+    "app.footer.slogan" : "Somos una empresa tecnológica, experta en el desarrollo e implantación de soluciones Open Source, apasionados por la buenas practicas y las metodologías ágiles, queremos ayudar a nuestros clientes a crecer con nosotros.",
+    "app.what-we-do.page.title.develop-tech": "Desarrollamos tecnología a medida",
+    "app.what-we-do.page.subtitle1.develop-tech": "Eliminamos antiguos y obsoletos procesos",
+    "app.what-we-do.page.subtitle2.develop-tech": "Automatizamos y modernizamos tu negocio",
+    "app.what-we-do.page.title.reliability": "Aportamos fiabilidad",
+    "app.what-we-do.page.subtitle.reliability": "La Transformación digital requiere que todo el personal de tu empresa y tus clientes abracen las nuevas tecnologías sustitutorias de los antiguos procesos",
+    "app.what-we-do.page.point1.reliability": "Para segurar el proceso de Transformación Digital, la tecnología a implementar debe ser FIABLE",
+    "app.what-we-do.page.point2.reliability": "La FIABILIDAD tecnológica es la base de aceptación de este proceso de transformación",
+    "app.what-we-do.page.title.advantages": "Ventajas de la digitalización",
+    "app.what-we-do.page.point1.advantages": "Mayor control sobre los procesos",
+    "app.what-we-do.page.point2.advantages": "Rápida corrección de los errores",
+    "app.what-we-do.page.point3.advantages": "Herramientas ágiles e intuitivas",
+    "app.what-we-do.page.point4.advantages": "No requiere de espacio físico de almacenamiento",
+    "app.what-we-do.page.point5.advantages": "Procesos más eficientes. Mejora en la productividad"
 }
