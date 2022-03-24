@@ -1,76 +1,32 @@
-<div class="container">
-    <div class="section">
-        <p class="page-title text-center">
-            {{'app.what-we-do.page.title.develop-tech'|translate}}
-        </p>
-
-        <div class="flex-row-center">
-            <div class="space-between">
-                <img [src]="oldProcessesImg" alt="oldProcesses">
-                <p class="description">
-                    {{'app.what-we-do.page.subtitle1.develop-tech'|translate}}
-                </p>
-            </div>
-
-            <div class="space-between">
-                <img [src]="arrowRightImg" alt="">
-            </div>
-
-            <div class="space-between">
-                <img [src]="newProcessesImg" alt="newProcesses">
-                <p class="description">
-                    {{'app.what-we-do.page.subtitle2.develop-tech'|translate}}
-                </p>
+<div class="container mt-5">
+    <div class="section-title-wrapper">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 mx-auto text-center">
+                <h2>{{'app.home.best_solution_for_bussines'|translate}}</h2>
+                <p class="mb-0">{{'app.home.experienced_team_text'|translate}}</p>
             </div>
         </div>
     </div>
-
-    <hr>
-
-    <div class="section">
-        <div class="space-between">
-            <p class="page-title text-center">
-                {{'app.what-we-do.page.title.reliability'|translate}}
+</div>
+<div class="container mt-5 features text-center mb-5">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-xl-6 m-sm-b">
+            <fa-icon icon="industry"></fa-icon>
+            <h3 class="mb-3 info-title">NUEVAS TECNOLOGÍAS</h3>
+            <p class="mb-4 font-small">
+                Combinamos nuestra especialización en tecnologías de vanguardia con un amplio conocimiento de los retos
+                de negocio de nuestros clientes mediante el uso de tecnologías open source y estándares
+                abiertos.
             </p>
+
         </div>
-
-        <div class="text-center space-between">
-            <div class="flex-row-center">
-                <p class="bullet-point">
-                    {{'app.what-we-do.page.point1.reliability'|translate}}
-                </p>
-                <img class="check-img" [src]="checkImg" alt="">
-            </div>
-
-            <div class="flex-row-center">
-                <p class="bullet-point">
-                    {{'app.what-we-do.page.point2.reliability'|translate}}
-                </p>
-                <img class="check-img" [src]="checkImg" alt="">
-            </div>
-        </div>
-
-        <div class="space-between">
-            <p class="page-subtitle text-center">
-                {{'app.what-we-do.page.subtitle.reliability'|translate}}
+        <div class="col-sm-12 col-md-6 col-xl-6 m-sm-b">
+            <fa-icon icon="sitemap"></fa-icon>
+            <h3 class="mb-3 info-title"> METODOLOGÍAS </h3>
+            <p class="mb-4 font-small">
+                La metodología Agile es una fórmula para el desarrollo de proyectos que necesitan rapidez y
+                flexibilidad para adaptarse a las necesidades del cliente, y siempre está enfocada a resultados.
             </p>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="section">
-        <div>
-            <p class="page-title text-center">
-                {{'app.what-we-do.page.title.advantages'|translate}}
-            </p>
-        </div>
-        <div>
-            <ul class="text-center">
-                <li class="page-subtitle" *ngFor="let point of advantagesList">
-                    {{point|translate}}
-                </li>
-            </ul>
         </div>
     </div>
 </div>
