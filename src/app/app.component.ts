@@ -20,13 +20,16 @@ export class AppComponent {
     envOwner = env.owner;
     version = env.versions.app;
     year = new Date().getFullYear();
-    // logo = require('../assets/favicon.svg');
-    // logoBlack = require('../assets/escenitech-black.svg');
+    logo = 'assets/favicon.svg';
+    logoBlack = 'assets/escenitech-black.svg';
 
     theme = env.themeName;
 
     navigation = [
-        {link: 'jobs', label: 'app.menu.jobs'},
+        {link: 'what-we-do', label: 'app.menu.what-do-we-do'},
+        {link: 'success-cases', label: 'app.menu.success-cases'},
+        {link: 'digital-kit', label: 'app.menu.digital-kit'},
+        {link: 'contact', label: 'app.menu.contact'},
     ];
     navigationSideMenu = [
         ...this.navigation

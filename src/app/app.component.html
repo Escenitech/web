@@ -2,7 +2,7 @@
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="push">
       <a class="branding mb-2 mt-2 text-center d-block" routerLink="" (click)="sidenav.close()">
-        <!-- <img [src]="logoBlack" [alt]="'app.title.home' | translate" /> -->
+        <img [src]="logoBlack" [alt]="'app.title.home' | translate" />
         <span data-testid="title">{{
           'app.title.home' | translate}}
         </span></a>
@@ -22,7 +22,7 @@
                 <fa-icon icon="bars"></fa-icon>
               </button>
               <span routerLink="" class="branding">
-                <!-- <img [src]="logo" [alt]="'app.title.home' | translate" /> -->
+                <img [src]="logo" [alt]="'app.title.home' | translate" />
                 {{'app.title.home'|translate}}</span>
               <span class="d-none d-md-inline">
                 <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
