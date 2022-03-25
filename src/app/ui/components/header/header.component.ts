@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -14,11 +15,12 @@ export class HeaderComponent implements OnInit {
     { link: 'what-we-do', label: 'app.menu.what-do-we-do' },
     { link: 'success-cases', label: 'app.menu.success-cases' },
     { link: 'digital-kit', label: 'app.menu.digital-kit' },
-    { link: 'contact', label: 'app.menu.contact' },
   ];
   navigationSideMenu = [
     ...this.navigation
   ];
+
+  languages = environment.languages;
 
   constructor() { }
 
