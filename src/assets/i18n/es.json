@@ -10,8 +10,6 @@
     "app.menufooter.legal": "Aviso legal",
     "app.home.slogan": "Expertos en DIGITALIZACIÓN (y transformación digital)",
     "app.home.slogan2": "Digitalizamos y Transformamos",
-    "app.what-we-do.page.best_solution_for_bussines": "¡Las mejores soluciones para las necesidades de su negocio!",
-    "app.what-we-do.page.experienced_team_text": "Con un equipo de más de 15 años de experiencia en el sector, Escenitech ofrece a sus clientes una solución tecnológica a medida para adaptar su negocio al futuro.",
     "app.footer.slogan" : "Somos una empresa tecnológica, experta en el desarrollo e implantación de soluciones Open Source, apasionados por la buenas practicas y las metodologías ágiles, queremos ayudar a nuestros clientes a crecer con nosotros.",
     "app.home.title.develop-tech": "Desarrollamos tecnología a medida",
     "app.home.subtitle1.develop-tech": "Eliminamos antiguos y obsoletos procesos",
@@ -25,5 +23,13 @@
     "app.home.point2.advantages": "Rápida corrección de los errores",
     "app.home.point3.advantages": "Herramientas ágiles e intuitivas",
     "app.home.point4.advantages": "No requiere de espacio físico de almacenamiento",
-    "app.home.point5.advantages": "Procesos más eficientes. Mejora en la productividad"
+    "app.home.point5.advantages": "Procesos más eficientes. Mejora en la productividad",
+    "app.what-we-do.page.best_solution_for_bussines": "¡Las mejores soluciones para las necesidades de su negocio!",
+    "app.what-we-do.page.experienced_team_text": "Con un equipo de más de 15 años de experiencia en el sector, Escenitech ofrece a sus clientes una solución tecnológica a medida para adaptar su negocio al futuro.",
+    "app.what-we-do.page.title.specialities": "Especialidades",
+    "app.what-we-do.page.label.tech1": "Back-End",
+    "app.what-we-do.page.label.tech2": "Front-End",
+    "app.what-we-do.page.label.tech3": "Mobile",
+    "app.what-we-do.page.label.tech4": "Cloud"
+
 }

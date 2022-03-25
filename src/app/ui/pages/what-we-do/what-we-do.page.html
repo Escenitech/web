@@ -31,3 +31,67 @@
         </div>
     </div>
 </div>
+
+<hr>
+
+<div class="container text-center">
+    <div class="row">
+        <div>
+            <p class="page-title">
+                {{'app.what-we-do.page.title.specialities'|translate}}
+            </p>
+        </div>
+
+        <div class="flex-row-center">
+            <p class="speciality">
+                {{'app.what-we-do.page.label.tech1'|translate}}
+            </p>
+
+            <img 
+                *ngFor="let img of backEndImgs"
+                [src]="img"
+                alt=""
+                class="tech-img"    
+            >
+        </div>
+
+        <div class="flex-row-center">
+            <p class="speciality">
+                {{'app.what-we-do.page.label.tech2'|translate}}
+            </p>
+
+            <img 
+                *ngFor="let img of frontEndImgs"
+                [src]="img"
+                alt=""
+                class="tech-img"    
+            >
+        </div>
+
+        <div class="flex-row-center">
+            <p class="speciality">
+                {{'app.what-we-do.page.label.tech3'|translate}}
+            </p>
+
+            <img 
+                *ngFor="let img of mobileImgs"
+                [src]="img"
+                alt=""
+                class="tech-img"    
+            >
+        </div>
+
+        <div class="flex-row-center">
+            <p class="speciality">
+                {{'app.what-we-do.page.label.tech4'|translate}}
+            </p>
+
+            <img 
+                *ngFor="let img of cloudImgs"
+                [src]="img"
+                alt=""
+                class="tech-img"    
+            >
+        </div>
+    </div>
+</div>
