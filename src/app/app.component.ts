@@ -15,11 +15,6 @@ declare var gtag: any;
     animations: [routeAnimations]
 })
 export class AppComponent {
-    isProd = env.production;
-    envName = env.envName;
-    envOwner = env.owner;
-    version = env.versions.app;
-    year = new Date().getFullYear();
 
     theme = env.themeName;
 

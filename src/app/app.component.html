@@ -5,72 +5,7 @@
       <div class="content" [@routeAnimations]="o.isActivated && o.activatedRoute?.routeConfig?.path">
         <router-outlet #o="outlet" (activate)="onActivate()"></router-outlet>
       </div>
-      <div class="footer mt-5">
-        <div class="foter-content-wrap pt-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6 contact">
-                <h3>CONTACTA CON NOSOTROS</h3>
-                <ul>
-                  <li>
-                    <fa-icon icon="map-marker-alt"></fa-icon>
-                    <span class="text">
-                      c\Peñiscola 31, Ático<br>
-                      08033 Barcelona<br>
-                      Spain
-                    </span>
-                  </li>
-                  <li>
-                    <a href="mailto:contact@escenitech.com">
-                      <fa-icon icon="envelope"></fa-icon>
-                      <span class="text">contact@escenitech.com</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://escenitech.com">
-                      <fa-icon icon="globe-americas"></fa-icon>
-                      <span class="text">escenitech.com</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-12 col-md-5">
-                <h3>TRABAJA CON NOSOTROS</h3>
-                <p class="sec-content">
-                  <fa-icon icon="quote-left"></fa-icon> {{'app.footer.slogan' |translate}} <fa-icon icon="quote-right"></fa-icon>
-                </p>
-                <a mat-raised-button routerLink="/jobs" routerLinkActive="active" class="jobs" color="primary">VER OFERTAS DE EMPLEO</a>
-              </div>
-            </div>
-            <div class="col-sm-12 d-flex justify-content-between text-center social-links mb-4 mt-4 pt-4 px-0">
-              <a href="https://www.github.com/escenitech" target="_blank">
-                <fa-icon [icon]="['fab','github']"></fa-icon> <span>Github</span>
-              </a>
-            </div>
-          </div>
-          <div class="feature-thumb">
-            <!-- <img [src]="logo" [alt]="'app.title.home' | translate"> -->
-          </div>
-        </div>
-
-        <div class="copy py-4">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                &#169; <span class="year" data-testid="footer-year">{{year}}</span> - {{envOwner}}
-                <br class="d-block d-sm-none">
-                <a href="https://github.com/escenitech/web" color="accent">
-                  <fa-icon [icon]="['fab','github']"></fa-icon>
-                  {{version}} <span *ngIf="!isProd">[{{envName}}]</span>
-                </a>
-              </div>
-              <div class="col-sm-12 col-md-6 text-right">
-                <a routerLink="/legal" routerLinkActive="active">{{'app.menufooter.legal' | translate}}</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-footer></app-footer>
     </div>
   </mat-sidenav-container>
 </div>

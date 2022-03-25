@@ -1,0 +1,61 @@
+@import '../../../../theme/variables.scss';
+
+.footer {
+    flex: 0 0 auto;
+    font-size: $font-size-base;
+    .foter-content-wrap {
+      border-top: 2px solid;
+      border-bottom: 1px solid;
+      position: relative;
+      font-size: $font-size-small !important;
+      .contact {
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            clear: both;
+            font-size: $font-size-small;
+            margin-bottom: 8px;
+            overflow: hidden;
+            fa-icon {
+              float: left;
+              margin-right: 8px;
+              margin-top: 2px;
+            }
+            .text {
+              float: left;
+            }
+          }
+        }
+      }
+      .feature-thumb {
+        position: absolute;
+        top: -50px;
+        right: 38px;
+        width: 10%;
+        img {
+          width: 100%;
+        }
+      }
+      @media (max-width: map-get($grid-breakpoints, md)) {
+        .feature-thumb {
+          top: -26px;
+        }
+      }
+      @media (max-width: map-get($grid-breakpoints, sm)) {
+        .feature-thumb {
+          top: 10px;
+        }
+      }
+    }
+    .copy {
+      border-top: 3px solid;
+      font-size: $font-size-small !important;
+    }
+    .social-links {
+      border-top: 1px solid;
+      fa-icon {
+        margin-right: 8px;
+      }
+    }
+  }

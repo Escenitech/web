@@ -31,3 +31,10 @@
         </div>
     </mat-toolbar>
 </div>
+<div class="lang-selector">
+    <mat-form-field appearance="fill">
+        <mat-select>
+            <mat-option *ngFor="let lang of languages" value="lang">{{lang}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

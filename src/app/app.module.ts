@@ -16,6 +16,7 @@ import { JobsPage } from './ui/pages/jobs/jobs.page';
 import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
 import { SuccessCasesComponent } from './ui/pages/success-cases/success-cases.component';
 import { HeaderComponent } from './ui/components/header/header.component';
+import { FooterComponent } from './ui/components/footer/footer.component';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,7 +28,8 @@ export const createTranslateLoader = (http: HttpClient) =>
     JobsPage,
     WhatWeDoPage,
     SuccessCasesComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
     // PageNotFoundComponent
   ],
   imports: [
