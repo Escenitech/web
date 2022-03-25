@@ -1,0 +1,33 @@
+<mat-sidenav #sidenav mode="push">
+    <a class="branding mb-2 mt-2 text-center d-block" routerLink="" (click)="sidenav.close()">
+        <img [src]="logoBlack" [alt]="'app.title.home' | translate" />
+        <span data-testid="title">{{
+            'app.title.home' | translate}}
+        </span></a>
+    <mat-nav-list>
+        <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()" [routerLink]="[item.link]"
+            routerLinkActive="active">
+            {{item.label | translate}}
+        </a>
+    </mat-nav-list>
+</mat-sidenav>
+<div class="toolbar">
+    <mat-toolbar color="primary">
+        <div class="container py-3">
+            <div class="row justify-content-between align-item-content align-items-center">
+                <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
+                    <fa-icon icon="bars"></fa-icon>
+                </button>
+                <span routerLink="" class="branding">
+                    <img [src]="logo" [alt]="'app.title.home' | translate" />
+                    {{'app.title.home'|translate}}</span>
+                <span class="d-none d-md-inline">
+                    <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
+                        routerLinkActive="active">
+                        {{item.label|translate}}
+                    </button>
+                </span>
+            </div>
+        </div>
+    </mat-toolbar>
+</div>

@@ -14,6 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePage } from './ui/pages/home/home.page';
 import { JobsPage } from './ui/pages/jobs/jobs.page';
 import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
+import { SuccessCasesComponent } from './ui/pages/success-cases/success-cases.component';
+import { HeaderComponent } from './ui/components/header/header.component';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +25,9 @@ export const createTranslateLoader = (http: HttpClient) =>
     AppComponent,
     HomePage,
     JobsPage,
-    WhatWeDoPage
+    WhatWeDoPage,
+    SuccessCasesComponent,
+    HeaderComponent
     // PageNotFoundComponent
   ],
   imports: [

@@ -20,20 +20,8 @@ export class AppComponent {
     envOwner = env.owner;
     version = env.versions.app;
     year = new Date().getFullYear();
-    logo = 'assets/favicon.svg';
-    logoBlack = 'assets/escenitech-black.svg';
 
     theme = env.themeName;
-
-    navigation = [
-        {link: 'what-we-do', label: 'app.menu.what-do-we-do'},
-        {link: 'success-cases', label: 'app.menu.success-cases'},
-        {link: 'digital-kit', label: 'app.menu.digital-kit'},
-        {link: 'contact', label: 'app.menu.contact'},
-    ];
-    navigationSideMenu = [
-        ...this.navigation
-    ];
 
     constructor(
         private router: Router,
