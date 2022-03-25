@@ -13,11 +13,11 @@ export class HomePage implements OnInit {
   checkImg: string = 'assets/check.png';
 
   advantagesList = [
-    'app.what-we-do.page.point1.advantages',
-    'app.what-we-do.page.point2.advantages',
-    'app.what-we-do.page.point3.advantages',
-    'app.what-we-do.page.point4.advantages',
-    'app.what-we-do.page.point5.advantages'
+    'app.home.point1.advantages',
+    'app.home.point2.advantages',
+    'app.home.point3.advantages',
+    'app.home.point4.advantages',
+    'app.home.point5.advantages'
   ];
 
   constructor() { }
