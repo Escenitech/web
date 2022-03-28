@@ -7,27 +7,60 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatWeDoPage implements OnInit {
 
-  backEndImgs: string[] = [
-    'assets/tech/php.png',
-    'assets/tech/symfony.png'
+  backEndImgs = [
+    {
+      img: 'assets/tech/php.png',
+      caption: 'PHP'
+    },
+    {
+      img: 'assets/tech/symfony.png',
+      caption: 'Symfony'
+    }
   ];
 
-  frontEndImgs: string[] = [
-    'assets/tech/react.png',
-    'assets/tech/Angular.png',
-    'assets/tech/js.png',
-    'assets/tech/html5.png'
+  frontEndImgs = [
+    {
+      img: 'assets/tech/react.png',
+      caption: 'React'
+    },
+    {
+      img: 'assets/tech/Angular.png',
+      caption: 'Angular'
+    },
+    {
+      img: 'assets/tech/js.png',
+      caption: 'JavaScript'
+    },
+    {
+      img: 'assets/tech/html5.png',
+      caption: 'HTML5'
+    }
   ];
 
-  mobileImgs: string[] = [
-    'assets/tech/react.png',
-    'assets/tech/ionic.png'
+  mobileImgs = [
+    {
+      img: 'assets/tech/react.png',
+      caption: 'React Native'
+    },
+    {
+      img: 'assets/tech/ionic.png',
+      caption: 'Ionic'
+    }
   ];
 
-  cloudImgs: string[] = [
-    'assets/tech/aws.png',
-    'assets/tech/googleCloud.png',
-    'assets/tech/firestore.png'
+  cloudImgs = [
+    {
+      img: 'assets/tech/aws.png',
+      caption: 'AWS'
+    },
+    {
+      img: 'assets/tech/googleCloud.png',
+      caption: 'Google Cloud'
+    },
+    {
+      img: 'assets/tech/firestore.png',
+      caption: 'Firestore'
+    }
   ];
 
   constructor() { }

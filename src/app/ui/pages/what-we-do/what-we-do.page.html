@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="container mt-5 features text-center mb-5">
+<div class="section mt-5 features text-center mb-5">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-6 m-sm-b">
             <fa-icon icon="industry"></fa-icon>
@@ -34,64 +34,88 @@
 
 <hr>
 
-<div class="container text-center">
-    <div class="row">
-        <div>
-            <p class="page-title">
-                {{'app.what-we-do.page.title.specialities'|translate}}
-            </p>
-        </div>
-
-        <div class="flex-row-center">
-            <p class="speciality">
-                {{'app.what-we-do.page.label.tech1'|translate}}
-            </p>
-
-            <img 
-                *ngFor="let img of backEndImgs"
-                [src]="img"
-                alt=""
-                class="tech-img"    
-            >
-        </div>
-
-        <div class="flex-row-center">
-            <p class="speciality">
-                {{'app.what-we-do.page.label.tech2'|translate}}
-            </p>
-
-            <img 
-                *ngFor="let img of frontEndImgs"
-                [src]="img"
-                alt=""
-                class="tech-img"    
-            >
-        </div>
-
-        <div class="flex-row-center">
-            <p class="speciality">
-                {{'app.what-we-do.page.label.tech3'|translate}}
-            </p>
-
-            <img 
-                *ngFor="let img of mobileImgs"
-                [src]="img"
-                alt=""
-                class="tech-img"    
-            >
-        </div>
-
-        <div class="flex-row-center">
-            <p class="speciality">
-                {{'app.what-we-do.page.label.tech4'|translate}}
-            </p>
-
-            <img 
-                *ngFor="let img of cloudImgs"
-                [src]="img"
-                alt=""
-                class="tech-img"    
-            >
-        </div>
+<div class="section">
+    <div>
+        <p class="page-title">
+            {{'app.what-we-do.page.title.specialities'|translate}}
+        </p>
     </div>
+
+    <table>
+        <tr>
+            <td>
+                <p class="speciality">
+                    {{'app.what-we-do.page.label.tech1'|translate}}
+                </p>
+            </td>
+
+            <td>
+                <div class="item" *ngFor="let img of backEndImgs">
+                    <img 
+                        [src]="img.img"
+                        alt=""
+                        class="tech-img"    
+                    >
+                    <span class="caption">{{img.caption}}</span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="speciality">
+                    {{'app.what-we-do.page.label.tech2'|translate}}
+                </p>
+            </td>
+
+            <td>
+                <div class="item" *ngFor="let img of frontEndImgs">
+                    <img
+                        [src]="img.img"
+                        alt=""
+                        class="tech-img"    
+                    >
+                    <span class="caption">{{img.caption}}</span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="speciality">
+                    {{'app.what-we-do.page.label.tech3'|translate}}
+                </p>
+            </td>
+
+            <td>
+                <div class="item" *ngFor="let img of mobileImgs">
+                    <img
+                        [src]="img.img"
+                        alt=""
+                        class="tech-img"    
+                    >
+                    <span class="caption">{{img.caption}}</span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="speciality">
+                    {{'app.what-we-do.page.label.tech4'|translate}}
+                </p>
+            </td>
+
+            <td>
+                <div class="item" *ngFor="let img of cloudImgs">
+                    <img
+                        [src]="img.img"
+                        alt=""
+                        class="tech-img"    
+                    >
+                    <span class="caption">{{img.caption}}</span>
+                </div>
+            </td>
+        </tr>
+    </table>
 </div>

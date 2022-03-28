@@ -1,5 +1,6 @@
 .tech-img {
-    height: 50px;
+    height: 55px;
+    margin: 0 15px;
 }
 
 .tech-container {
@@ -9,4 +10,23 @@
 
 .tech-element {
     padding: 20px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 30px 15px;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.caption {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
 }
