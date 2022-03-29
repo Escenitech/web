@@ -33,19 +33,16 @@
       @media (max-width: map-get($grid-breakpoints, lg)) {
         h2 {
           font-size: 250%;
-          margin-left: -40%;
         }
       }
       @media (max-width: map-get($grid-breakpoints, md)) {
         h2 {
           font-size: 200%;
-          margin-left: -40%;
         }
       }
       @media (max-width: map-get($grid-breakpoints, sm)) {
         h2 {
-          font-size: 130%;
-          margin-left: -44%;
+          font-size: 150%;
         }
       }
     }
