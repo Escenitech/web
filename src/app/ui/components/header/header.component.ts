@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   navigation = [
     { link: 'what-we-do', label: 'app.menu.what-do-we-do' },
     { link: 'success-cases', label: 'app.menu.success-cases' },
-    { link: 'digital-kit', label: 'app.menu.digital-kit' },
+    { link: 'kit-digital', label: 'app.menu.kit-digital' },
   ];
   navigationSideMenu = [
     ...this.navigation
