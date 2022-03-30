@@ -76,5 +76,14 @@
     "app.kit-digital.solution.processes.description.time-to-do.num": "12 meses",
     "app.kit-digital.solution.processes.price": "Precio: Entre 5.000€ y 25.000€",
     "app.kit-digital.solution.processes.subvention": "Subvencionables: hasta 6.000€",
-    "app.kit-digital.solution.processes.subventionedBy": "Solución subvencionada por los fondos Next Generation de la UE"
+    "app.kit-digital.solution.processes.subventionedBy": "Solución subvencionada por los fondos Next Generation de la UE",
+    "app.kit-digital.solution.processes.segment1.subvention": "Subvención: 6.000€",
+    "app.kit-digital.solution.processes.segment2.subvention": "Subvención: 2.000€",
+    "app.kit-digital.solution.processes.segment3.subvention": "Subvención: 500€",
+    "app.kit-digital.solution.processes.description2.point1": "Hasta 60 horas de parametrización (definición de procesos y carga de datos)",
+    "app.kit-digital.solution.processes.description2.point2": "Digitalización y/o automatización de procesos y flujos de trabajo: tendrás digitalizados y/o automatizados procesos como:",
+    "app.kit-digital.solution.processes.description2.point2-2": "Contabilidad, Facturación, Proyectos, Inventarios, Compras y pagos, Recursos humanos, Logística.",
+    "app.kit-digital.solution.processes.description2.point3": "Integración con diversas plataformas a través de APIs o Web Services.",
+    "app.kit-digital.solution.processes.description2.point4": "Actualizaciones de la solución con nuevas versiones.",
+    "app.kit-digital.solution.processes.description2.point5": "Escalable: si tu empresa crece o cambia estructuralmente, la solución se adaptará a estos cambios."
 }
