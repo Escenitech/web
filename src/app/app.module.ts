@@ -14,9 +14,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePage } from './ui/pages/home/home.page';
 import { JobsPage } from './ui/pages/jobs/jobs.page';
 import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
-import { SuccessCasesComponent } from './ui/pages/success-cases/success-cases.component';
 import { HeaderComponent } from './ui/components/header/header.component';
 import { FooterComponent } from './ui/components/footer/footer.component';
+import { KitDigitalPage } from './ui/pages/kit-digital/kit-digital.page';
+import { WebSolutionComponent } from './ui/components/web-solution/web-solution.component';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,9 +28,10 @@ export const createTranslateLoader = (http: HttpClient) =>
     HomePage,
     JobsPage,
     WhatWeDoPage,
-    SuccessCasesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    KitDigitalPage,
+    WebSolutionComponent
     // PageNotFoundComponent
   ],
   imports: [

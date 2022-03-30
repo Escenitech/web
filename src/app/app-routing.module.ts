@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './ui/pages/home/home.page';
 import { JobsPage } from './ui/pages/jobs/jobs.page';
+import { KitDigitalPage } from './ui/pages/kit-digital/kit-digital.page';
 import { PageNotFoundPage } from './ui/pages/page-not-found/page-not-found.component';
 import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'what-we-do',
     component: WhatWeDoPage
+  },
+  {
+    path: 'kit-digital',
+    component: KitDigitalPage
   },
   {
     path: '**',
