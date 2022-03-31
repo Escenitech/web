@@ -162,3 +162,28 @@ hr {
   border-radius: 10px;
   padding: 20px 10px;
 }
+
+.purple-fill {
+  color: white;
+  background-color: $primary-color;
+}
+
+.emphasize {
+  font-size: 28px;
+}
+
+.box-title {
+  font-size: 16px;
+}
+
+.segment {
+  padding: 20px 50px;
+  font-weight: bold;
+}
+
+table.segments {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 50px 15px;
+}
