@@ -20,6 +20,7 @@ import { KitDigitalPage } from './ui/pages/kit-digital/kit-digital.page';
 import { WebSolutionComponent } from './ui/components/web-solution/web-solution.component';
 import { ProcessesSolutionComponent } from './ui/components/processes-solution/processes-solution.component';
 import { DigitalBillSolutionComponent } from './ui/components/digital-bill-solution/digital-bill-solution.component';
+import { ClientManagementSolutionComponent } from './ui/components/client-management-solution/client-management-solution.component';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -35,7 +36,8 @@ export const createTranslateLoader = (http: HttpClient) =>
     KitDigitalPage,
     WebSolutionComponent,
     ProcessesSolutionComponent,
-    DigitalBillSolutionComponent
+    DigitalBillSolutionComponent,
+    ClientManagementSolutionComponent
     // PageNotFoundComponent
   ],
   imports: [
