@@ -14,19 +14,25 @@
 <div class="toolbar">
     <mat-toolbar color="primary">
         <div class="container py-3">
-            <div class="row justify-content-between align-item-content align-items-center">
+            <div class="nav-bar">
                 <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
                     <fa-icon icon="bars"></fa-icon>
                 </button>
-                <span routerLink="" class="branding">
-                    <img [src]="logo" [alt]="'app.title.home' | translate" />
-                    {{'app.title.home'|translate}}</span>
-                <span class="d-none d-md-inline">
-                    <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
-                        routerLinkActive="active">
-                        {{item.label|translate}}
-                    </button>
-                </span>
+                <div>
+                    <span routerLink="" class="branding">
+                        <img [src]="logo" [alt]="'app.title.home' | translate" />
+                        {{'app.title.home'|translate}}
+                    </span>
+                </div>
+
+                <div>
+                    <span class="d-none d-md-inline">
+                        <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
+                            routerLinkActive="active">
+                            {{item.label|translate}}
+                        </button>
+                    </span>
+                </div>
             </div>
         </div>
     </mat-toolbar>
