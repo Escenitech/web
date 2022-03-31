@@ -6,10 +6,16 @@
 .nav {
     display: flex;
     justify-content: center;
+    font-size: large;
+    font-weight: bold;
 }
 
 li {
     display: inline;
     text-decoration: none;
     margin: 0 20px;
+}
+
+.selected {
+    color: red;
 }

@@ -9,13 +9,18 @@ export class KitDigitalPage implements OnInit {
 
   currentSolution: string = 'web';
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
   changeSolution(newSolution: string) {
+    document.getElementById(this.currentSolution)?.classList.toggle('selected');
     this.currentSolution = newSolution;
+    document.getElementById(this.currentSolution)?.classList.toggle('selected');
   }
 
 }
