@@ -133,5 +133,10 @@
     "app.kit-digital.solution.client-management.description2.point9": "Integración con diversas plataformas medianteAPIs o Web Services.",
     "app.kit-digital.solution.client-management.segment1.subvention": "Subvención: 4.000€",
     "app.kit-digital.solution.client-management.segment2.subvention": "Subvención: 2.000€",
-    "app.kit-digital.solution.client-management.segment3.subvention": "Subvención: 2.000€"
+    "app.kit-digital.solution.client-management.segment3.subvention": "Subvención: 2.000€",
+    "app.success-cases.page.title": "Casos de éxito",
+    "app.success-cases.page.delivery-note.title": "ALBARÁN DIGITAL: APP GESTIÓN DE FLOTAS,  ALBARANES Y FACTURAS ELECTRÓNICAS",
+    "app.success-cases.page.delivery-note.description": "Aplicación móvil que permite a los conductores gestionar sus órdenes de trabajo digitales y albaranes en sustitución de sus correspondientes equivalentes en papel. También habilita la funcionalidad de seguimiento a la flota de vehículos y la automatización de procesos. Esta aplicación ha sido mencionada en varias ocasiones por las autoridades catalanas como un buen ejemplo de transformación digital.",
+    "app.success-cases.page.client-space.title": "APP ESPAI CLIENT: APLICACIÓN ZONA DE CLIENTES",
+    "app.success-cases.page.client-space.description": "Aplicación web que permite a los clientes administrar sus sitios de trabajo, revisar y descargar sus documentos (albaranes, facturas, certificados de calidad, etc.) y configurar notificaciones automáticas entre otras funcionalidades."
 }

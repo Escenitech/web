@@ -1,0 +1,21 @@
+@import '../../../../theme/variables.scss';
+
+.wrapper {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.title {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    height: 50vh;
+    margin: 20px;
+}

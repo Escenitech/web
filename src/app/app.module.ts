@@ -21,6 +21,7 @@ import { WebSolutionComponent } from './ui/components/web-solution/web-solution.
 import { ProcessesSolutionComponent } from './ui/components/processes-solution/processes-solution.component';
 import { DigitalBillSolutionComponent } from './ui/components/digital-bill-solution/digital-bill-solution.component';
 import { ClientManagementSolutionComponent } from './ui/components/client-management-solution/client-management-solution.component';
+import { SuccessCasesPage } from './ui/pages/success-cases/success-cases.page';
 
 export const createTranslateLoader = (http: HttpClient) =>
     new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -37,7 +38,8 @@ export const createTranslateLoader = (http: HttpClient) =>
     WebSolutionComponent,
     ProcessesSolutionComponent,
     DigitalBillSolutionComponent,
-    ClientManagementSolutionComponent
+    ClientManagementSolutionComponent,
+    SuccessCasesPage
     // PageNotFoundComponent
   ],
   imports: [

@@ -4,6 +4,7 @@ import { HomePage } from './ui/pages/home/home.page';
 import { JobsPage } from './ui/pages/jobs/jobs.page';
 import { KitDigitalPage } from './ui/pages/kit-digital/kit-digital.page';
 import { PageNotFoundPage } from './ui/pages/page-not-found/page-not-found.component';
+import { SuccessCasesPage } from './ui/pages/success-cases/success-cases.page';
 import { WhatWeDoPage } from './ui/pages/what-we-do/what-we-do.page';
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'kit-digital',
     component: KitDigitalPage
+  },
+  {
+    path: 'success-cases',
+    component: SuccessCasesPage
   },
   {
     path: '**',
