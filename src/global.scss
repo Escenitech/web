@@ -161,6 +161,7 @@ hr {
   border: 3px solid $primary-color;
   border-radius: 10px;
   padding: 20px 10px;
+  background-color: white;
 }
 
 .purple-fill {
@@ -187,3 +188,8 @@ table.segments {
   border-collapse: separate;
   border-spacing: 50px 15px;
 }
+
+// .solution {
+//   background: url('./assets/background-lowRes.jpg') 100% 100% / cover no-repeat;
+//   padding-bottom: 30px;
+// }
