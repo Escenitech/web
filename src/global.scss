@@ -108,6 +108,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 30px;
 }
 
 .space-between {
@@ -164,9 +165,45 @@ hr {
   background-color: white;
 }
 
+h2 > span {
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+ul {
+  list-style: square;
+  font-weight: bold;
+
+  li::marker {
+      font-size: 30px;
+      color: $primary-color;
+  }
+}
+
+.description-list {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  font-weight: bold;
+  color: $primary-color;
+  font-size: medium;
+}
+
+
 .purple-fill {
   color: white;
   background-color: $primary-color;
+
+  ul {
+    li::marker {
+      color: white;
+    }
+  }
 }
 
 .emphasize {
@@ -189,7 +226,11 @@ table.segments {
   border-spacing: 50px 15px;
 }
 
-// .solution {
-//   background: url('./assets/background-lowRes.jpg') 100% 100% / cover no-repeat;
-//   padding-bottom: 30px;
-// }
+.solution {
+  background: url('./assets/background-lowRes.jpg') 100% 100% / cover no-repeat;
+  height: 80vh;
+}
+
+.segments-wrapper {
+  padding: 20px;
+}
