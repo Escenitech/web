@@ -1,29 +1,29 @@
-<div>
+<div class="wrapper">
     <h2 class="page-title">
         {{'app.success-cases.page.title'|translate}}
     </h2>
 
-    <div class="wrapper">
+    <div class="inner">
         <h5 class="title">{{'app.success-cases.page.delivery-note.title'|translate}}</h5>
         <p>
             {{'app.success-cases.page.delivery-note.description'|translate}}
         </p>
 
         <div class="img-wrapper">
-            <img class="img" *ngFor="let img of deliveryNoteImgs" [src]="img" alt="">
+            <img class="dn-img" *ngFor="let img of deliveryNoteImgs" [src]="img" alt="">
         </div>
     </div>
 
     <hr>
     
-    <div class="wrapper">
+    <div class="inner">
         <h5 class="title">{{'app.success-cases.page.client-space.title'|translate}}</h5>
         <p>
             {{'app.success-cases.page.client-space.description'|translate}}
         </p>
 
         <div class="img-wrapper">
-            <img class="img" *ngFor="let img of clientSpaceImgs" [src]="img" alt="">
+            <img class="cs-img" *ngFor="let img of clientSpaceImgs" [src]="img" alt="">
         </div>
     </div>
     

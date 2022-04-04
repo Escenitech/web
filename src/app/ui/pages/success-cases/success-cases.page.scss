@@ -1,6 +1,10 @@
 @import '../../../../theme/variables.scss';
 
 .wrapper {
+    margin: 25px;
+}
+
+.inner {
     width: 85%;
     margin: 30px auto;
 }
@@ -13,9 +17,15 @@
 .img-wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-.img {
-    height: 50vh;
+.dn-img {
+    height: 10%;
+    max-width: 25%;
     margin: 20px;
+}
+
+.cs-img {
+    max-width: 50%;
 }
