@@ -1,3 +1,5 @@
+@import '../../../../theme/variables.scss';
+
 .logo {
     display: block;
     margin-left: auto;
@@ -16,9 +18,14 @@
 li {
     display: inline;
     text-decoration: none;
-    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+li:hover {
+    background-color: rgba(128, 128, 128, 0.352);
+    border-radius: 5px;
 }
 
 .selected {
-    color: red;
+    color: $primary-color;
 }
