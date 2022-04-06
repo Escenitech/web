@@ -97,6 +97,7 @@ html {
 .page-subtitle {
   font-size: large;
   font-weight: bold;
+  margin-left: 15%;
 }
 
 .description {
@@ -127,18 +128,14 @@ hr {
 }
 
 .bullet-point {
-  color: white;
-  background-color: $color-primary;
   font-size: large;
   width: 50%;
-  border-radius: 10px;
-  padding: 10px;
-  padding-right: 0;
 }
 
 .check-img {
-  height: 40px;
-  vertical-align: middle;
+  height: 50px;
+  margin: auto 0;
+  transform: translate(-25px);
 }
 
 .section {
@@ -236,4 +233,8 @@ table.segments {
 
 .segments-wrapper {
   padding: 20px;
+}
+
+.hidden {
+  display: none;
 }
