@@ -97,7 +97,6 @@ html {
 .page-subtitle {
   font-size: large;
   font-weight: bold;
-  margin-left: 15%;
 }
 
 .description {
@@ -139,8 +138,17 @@ hr {
 }
 
 .section {
+  opacity: 0;
   margin: 30px;
 }
+
+.section-animated {
+  opacity: 1;
+  overflow: hidden;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
 
 .features {
   fa-icon {
@@ -153,6 +161,7 @@ hr {
   color: $color-primary;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: large;
 }
 
 .box {
@@ -227,7 +236,7 @@ table.segments {
 }
 
 .solution {
-  background: url('./assets/background-lowRes.jpg') 100% 100% / cover no-repeat;
+  background: url('./assets/background.jpg') 100% 75px / cover no-repeat;
   height: 80vh;
 }
 

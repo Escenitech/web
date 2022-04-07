@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss']
 })
 export class HomePage implements OnInit {
+
+  @ViewChildren('showDiv') divs!: QueryList<ElementRef>;
 
   oldProcessesImg: string = 'assets/icon-oldProcesses.png';
   newProcessesImg: string = 'assets/icon-newProcesses.png';
@@ -23,6 +25,11 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+  }
+
+  ngAfterViewChecked() {
+    console.log(this.divs);
   }
 
 }

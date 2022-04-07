@@ -41,4 +41,28 @@
       stroke-dashoffset: -124px;
     }
   }
+
+  @keyframes fadeIn {
+    0%,
+    100%,
+    80% {
+      opacity: 1;
+    }
+    2% {
+      opacity: 1;
+      -webkit-transform: translateX(-30px);
+      transform: translateX(-30px);
+    }
+    47%,
+    5% {
+      opacity: 0;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateX(30px);
+      transform: translateX(30px);
+    }
+  }
   
