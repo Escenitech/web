@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { animate } from 'src/app/shared/animate-on-scroll';
 
 @Component({
   selector: 'app-processes-solution',
@@ -10,6 +11,7 @@ export class ProcessesSolutionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener('scroll', animate, true);
   }
 
 }
