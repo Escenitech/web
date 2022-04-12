@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { animate } from 'src/app/shared/animate-on-scroll';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,6 @@ import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular
   styleUrls: ['./home.page.scss']
 })
 export class HomePage implements OnInit {
-
-  @ViewChildren('showDiv') divs!: QueryList<ElementRef>;
 
   oldProcessesImg: string = 'assets/icon-oldProcesses.png';
   newProcessesImg: string = 'assets/icon-newProcesses.png';
@@ -25,11 +24,6 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    window.addEventListener('scroll', animate, true);
   }
-
-  ngAfterViewChecked() {
-    console.log(this.divs);
-  }
-
 }

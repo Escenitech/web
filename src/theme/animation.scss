@@ -44,25 +44,22 @@
 
   @keyframes fadeIn {
     0%,
-    100%,
-    80% {
-      opacity: 1;
-    }
-    2% {
-      opacity: 1;
-      -webkit-transform: translateX(-30px);
-      transform: translateX(-30px);
-    }
-    47%,
-    5% {
+    10% {
       opacity: 0;
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+      -webkit-transform: translateX(-150px);
+      transform: translateX(-150px);
     }
-    50% {
+
+    20% {
       opacity: 1;
-      -webkit-transform: translateX(30px);
-      transform: translateX(30px);
+      -webkit-transform: translateX(-150px);
+      transform: translateX(-150px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
     }
   }
   

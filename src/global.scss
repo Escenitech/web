@@ -143,14 +143,15 @@ hr {
 }
 
 .section {
+  opacity: 0;
   margin: 30px;
 }
 
-.section-animated {
+.animate {
   opacity: 1;
   overflow: hidden;
   animation-name: fadeIn;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 
