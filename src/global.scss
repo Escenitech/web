@@ -144,7 +144,7 @@ hr {
 
 .section {
   opacity: 0;
-  margin: 30px;
+  margin: 30px 10%;
 }
 
 .animate {
@@ -249,6 +249,86 @@ table.segments {
   padding: 20px;
 }
 
-.hidden {
-  display: none;
+@media screen and (max-width: 768px) {
+  .bullet-point {
+    width: 100%;
+  }
+
+  .flex-row-center {
+    transform: translateX(25px);
+  }
+
+  ul {
+    font-size: 16px;
+
+    li::marker {
+      font-size: 20px;
+    }
+  }
+
+  .row {
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .nav {
+    ul {
+      list-style: none;
+      text-align: center;
+      font-size: 20px;
+
+      li {
+        display: block;
+      }
+    }
+  }
+
+  .description-list {
+    ul {
+      font-size: 16px;
+    }
+  }
+
+  .section {
+    margin: 30px 10% 30px 0;
+
+    span {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .solution {
+    // background: url('./assets/background.jpg') 100% 100% / cover;
+    background: none;
+    height: 100%;
+  }
+
+  table.segments{
+    border-spacing: 0;
+
+    tr > * {
+      display: block;
+    }
+    
+    tr {
+      display: table-cell;
+    }
+
+    td {
+      margin: 30px auto;
+
+      .emphasize {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .segments-wrapper {
+    transform: translateX(5%);
+  }
 }

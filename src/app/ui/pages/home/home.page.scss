@@ -18,7 +18,8 @@
         position: relative;
         font-size: 250%;
         font-family: $font-family;
-        margin-left: -30%;
+        margin-left: -50%;
+        line-height: normal;
         .d-title {
           display: inline;
           text-indent: 10px;
@@ -49,12 +50,20 @@
       }
       @media (max-width: map-get($grid-breakpoints, md)) {
         h2 {
-          font-size: 200%;
+          span {
+            font-size: 73%;
+          }
+        }
+
+        h4 {
+          font-size: 100%;
         }
       }
       @media (max-width: map-get($grid-breakpoints, sm)) {
         h2 {
-          font-size: 150%;
+          span {
+            font-size: 73%;
+          }
         }
       }
     }
