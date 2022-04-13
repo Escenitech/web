@@ -33,3 +33,19 @@ div.item {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    .item {
+        .tech-img {
+            height: 40px;
+        }
+
+        .caption {
+            font-size: 15px;
+        }
+    }
+
+    table {
+        border-spacing: 10px 20px;
+    }
+}
