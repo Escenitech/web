@@ -38,6 +38,15 @@
 .default-theme {
   @include angular-material-theme($anms-theme);
   @include custom-components-theme($anms-theme);
+
+  .mat-drawer.mat-drawer-push {
+    margin-top: 20px;
+    background-color: $primary-color;
+    font-weight: bold;
+  }
+  .mat-list-item-content {
+    color: white;
+  }
 }
 
 body,
