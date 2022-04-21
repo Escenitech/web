@@ -7,7 +7,6 @@
         <li id="web" class="selected" (click)="changeSolution('web')">{{'app.kit-digital.page.web-solution'|translate}}</li>
         <li id="bill" (click)="changeSolution('bill')">{{'app.kit-digital.page.digital-bill-solution'|translate}}</li>
         <li id="client" (click)="changeSolution('client')">{{'app.kit-digital.page.client-management-solution'|translate}}</li>
-        <li id="processes" (click)="changeSolution('processes')">{{'app.kit-digital.page.process-management-solution'|translate}}</li>
     </ul>
 </div>
 
@@ -15,10 +14,6 @@
 
 <div *ngIf="currentSolution === 'web'">
     <app-web-solution></app-web-solution>
-</div>
-
-<div *ngIf="currentSolution === 'processes'">
-    <app-processes-solution></app-processes-solution>
 </div>
 
 <div *ngIf="currentSolution === 'bill'">
