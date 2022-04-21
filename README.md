@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Deploy Github pages
 
-Run `npm run deploy-gh` to deploy and publish the new changes to escenitech.com
+Run `ng deploy --base-href=/ --cname=escenitech.com --no-silent` to deploy and publish the new changes to escenitech.com
 
 ## Code scaffolding
 
