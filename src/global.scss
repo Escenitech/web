@@ -117,11 +117,20 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // padding: 30px;
+}
+
+.flex-row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .space-between {
   padding: 20px;
+}
+
+.margin-between {
+  margin: auto 30px;
 }
 
 .w60 {
@@ -229,6 +238,17 @@ ul {
   }
 }
 
+.white-fill {
+  color: $color-primary;
+  background-color: white;
+
+  ul {
+    li::marker {
+      color: $color-primary;
+    }
+  }
+}
+
 .emphasize {
   font-size: 28px;
 }
@@ -256,6 +276,18 @@ table.segments {
 
 .segments-wrapper {
   padding: 20px;
+}
+
+.purple-text {
+  color: $color-primary;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -339,5 +371,10 @@ table.segments {
 
   .segments-wrapper {
     transform: translateX(5%);
+  }
+
+  .flex-row-center,
+  .flex-row-left {
+    flex-wrap: wrap;
   }
 }

@@ -79,8 +79,6 @@
             top: 17px;
           }
         }
-
-
       }
     }
   }
@@ -97,6 +95,30 @@
   justify-content: center;
 }
 
+.arrow {
+  margin: 20px 10px;
+}
+
+.with-background {
+  background: url('../../../../assets/escenitech-web.jpg') 100% 300px / cover no-repeat;
+  padding-bottom: 50px;
+}
+
+.reliability {
+  width: 30%;
+  margin: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.giant-text {
+  font-size: 32px;
+}
+
+.mt-250 {
+  margin-top: 250px;
+}
+
 @media screen and (max-width: 768px) {
   .processes {
     flex-direction: column;
@@ -105,5 +127,13 @@
       text-align: center;
       transform: rotate(90deg);
     }
+  }
+
+  .reliability {
+    width: 100%;
+  }
+
+  .mt-250 {
+    margin-top: 20px;
   }
 }
