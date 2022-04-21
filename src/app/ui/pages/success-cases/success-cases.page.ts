@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { animate } from 'src/app/shared/animate-on-scroll';
 
 @Component({
   selector: 'app-success-cases',
@@ -20,6 +21,7 @@ export class SuccessCasesPage implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener('scroll', animate, true);
   }
 
 }
