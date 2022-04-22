@@ -117,6 +117,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  overflow: auto;
 }
 
 .flex-row-left {
@@ -152,12 +153,6 @@ hr {
 .bullet-point {
   font-size: large;
   width: 50%;
-}
-
-.check-img {
-  height: 50px;
-  margin: auto 0;
-  transform: translate(-25px);
 }
 
 .section {
