@@ -1,5 +1,10 @@
 @import '../../../../theme/variables.scss';
 
+h2 {
+    margin-left: 18%;
+    padding-bottom: 20px;
+}
+
 .logo {
     display: block;
     margin-left: auto;
@@ -21,13 +26,23 @@ li {
     padding: 10px 20px;
 }
 
-li:hover {
-    background-color: rgba(128, 128, 128, 0.352);
-    border-radius: 5px;
+button {
+    color: $primary-color;
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 .selected {
-    color: $primary-color;
+    color: white;
+    background-color: $accent-color;
+}
+
+button:hover {
+    background-color: $accent-color;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {

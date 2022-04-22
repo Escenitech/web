@@ -2,16 +2,36 @@
     <img class="logo" src="assets/Logo-digitalizadores.png" alt="">
 </div>
 
+<h2 class="page-title text-left">
+    {{'app.kit-digital.page.solutions'|translate}}
+</h2>
+
 <div class="nav">
     <ul>
-        <li id="web" class="selected" (click)="changeSolution('web')">{{'app.kit-digital.page.web-solution'|translate}}</li>
-        <li id="bill" (click)="changeSolution('bill')">{{'app.kit-digital.page.digital-bill-solution'|translate}}</li>
-        <li id="client" (click)="changeSolution('client')">{{'app.kit-digital.page.client-management-solution'|translate}}</li>
-        <li id="processes" (click)="changeSolution('processes')">{{'app.kit-digital.page.process-management-solution'|translate}}</li>
+        <li (click)="changeSolution('web')">
+            <button id="web" class="selected">
+                {{'app.kit-digital.page.web-solution'|translate}}
+            </button>
+        </li>
+        <li (click)="changeSolution('bill')">
+            <button id="bill">
+                {{'app.kit-digital.page.digital-bill-solution'|translate}}
+            </button>
+        </li>
+        <li (click)="changeSolution('client')">
+            <button id="client">
+                {{'app.kit-digital.page.client-management-solution'|translate}}
+            </button>
+        </li>
+        <li (click)="changeSolution('processes')">
+            <button id="processes">
+                {{'app.kit-digital.page.process-management-solution'|translate}}
+            </button>
+        </li>
     </ul>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 <div *ngIf="currentSolution === 'web'">
     <app-web-solution></app-web-solution>
