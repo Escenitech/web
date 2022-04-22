@@ -117,7 +117,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  overflow: auto;
 }
 
 .flex-row-left {
@@ -266,7 +265,6 @@ table.segments {
 
 .solution {
   background: url('./assets/background-lowRes.jpg') 100% 75px / cover no-repeat;
-  height: 80vh;
 }
 
 .segments-wrapper {
