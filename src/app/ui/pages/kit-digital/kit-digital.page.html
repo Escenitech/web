@@ -13,6 +13,13 @@
                 {{'app.kit-digital.page.web-solution'|translate}}
             </button>
         </li>
+
+        <li (click)="changeSolution('eCommerce')">
+            <button id="eCommerce">
+                {{'app.kit-digital.page.e-commerce-solution'|translate}}
+            </button>
+        </li>
+
         <li (click)="changeSolution('bill')">
             <button id="bill">
                 {{'app.kit-digital.page.digital-bill-solution'|translate}}
@@ -35,6 +42,10 @@
 
 <div *ngIf="currentSolution === 'web'">
     <app-web-solution></app-web-solution>
+</div>
+
+<div *ngIf="currentSolution === 'eCommerce'">
+    <app-e-commerce-solution></app-e-commerce-solution>
 </div>
 
 <div *ngIf="currentSolution === 'processes'">

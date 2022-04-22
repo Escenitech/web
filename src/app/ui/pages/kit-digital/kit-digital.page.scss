@@ -23,7 +23,7 @@ h2 {
 li {
     display: inline;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
 }
 
 button {
@@ -38,6 +38,7 @@ button {
 .selected {
     color: white;
     background-color: $accent-color;
+    border: 1px solid $accent-color;
 }
 
 button:hover {
