@@ -6,8 +6,6 @@ export function animate() {
       var elementVisible = 100;
       if (elementTop < windowHeight - elementVisible) {
         sections[i].classList.add("animate");
-      } else {
-        sections[i].classList.remove("animate");
       }
     }
 }
