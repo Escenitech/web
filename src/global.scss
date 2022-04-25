@@ -264,7 +264,7 @@ table.segments {
 }
 
 .solution {
-  background: url('./assets/background-lowRes.jpg') 100% 75px / cover no-repeat;
+  background: url('./assets/background-lowRes.jpg') 100% 10% / cover no-repeat;
 }
 
 .segments-wrapper {
@@ -337,7 +337,7 @@ table.segments {
   }
 
   .solution {
-    // background: url('./assets/background.jpg') 100% 100% / cover;
+    // background: url('./assets/background.jpg') -40px 50% / cover no-repeat;
     background: none;
     height: 100%;
   }

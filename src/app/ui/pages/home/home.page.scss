@@ -104,6 +104,13 @@
   padding-bottom: 50px;
 }
 
+.zoom-in {
+  overflow: hidden;
+  animation-name: zoomIn;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+}
+
 .reliability {
   width: 30%;
   margin: 40px;
