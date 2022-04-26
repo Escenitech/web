@@ -155,8 +155,11 @@ hr {
 }
 
 .section {
-  opacity: 0;
   margin: 30px 10%;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .animate {

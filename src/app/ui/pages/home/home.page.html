@@ -17,23 +17,23 @@
 
 <div class="container">
     <div class="section section-animated">
-        <h2 class="page-title text-center">
+        <h2 class="page-title text-center hidden">
             {{'app.home.title.develop-tech'|translate}}
         </h2>
 
         <div class="processes">
-            <div class="space-between text-center">
+            <div class="space-between text-center hidden">
                 <img [src]="oldProcessesImg" alt="oldProcesses">
                 <p class="description">
                     {{'app.home.subtitle1.develop-tech'|translate}}
                 </p>
             </div>
 
-            <div class="space-between arrow">
+            <div class="space-between arrow hidden">
                 <img [src]="arrowRightImg" alt="">
             </div>
 
-            <div class="space-between text-center">
+            <div class="space-between text-center hidden">
                 <img [src]="newProcessesImg" alt="newProcesses">
                 <p class="description">
                     {{'app.home.subtitle2.develop-tech'|translate}}
@@ -44,18 +44,18 @@
 
     <div class="section">
         <div class="flex-row-center">
-            <p class="box purple-fill bullet-point margin-between">
+            <p class="box purple-fill bullet-point margin-between hidden">
                 {{'app.home.subtitle3.develop-tech'|translate}}
             </p>
 
-            <p class="box purple-fill bullet-point margin-between">
+            <p class="box purple-fill bullet-point margin-between hidden">
                 {{'app.home.subtitle4.develop-tech'|translate}}
             </p>
         </div>
     </div>
 
     <div class="section">
-        <p class="description text-center w80-center">
+        <p class="description text-center w80-center hidden">
             {{'app.home.subtitle5.develop-tech'|translate}}
         </p>
     </div>
@@ -64,20 +64,20 @@
 <div class="with-background">
     <div class="container">
         <div class="section section-animated">
-            <div class="space-between">
-                <h2 class="page-title text-right purple-text giant-text">
+            <div class="space-between hidden">
+                <h2 class="page-title text-right purple-text giant-text hidden">
                     {{'app.home.title.reliability'|translate}}
                 </h2>
             </div>
     
-            <div class="text-left space-between mt-250">
-                <div class="flex-row-left">
+            <div class="text-left space-between mt-250 hidden">
+                <div class="flex-row-left hidden">
                     <p class="bullet-point box purple-fill">
                         {{'app.home.point1.reliability'|translate}}
                     </p>
                 </div>
     
-                <div class="flex-row-left">
+                <div class="flex-row-left hidden">
                     <p class="bullet-point box white-fill">
                         {{'app.home.point2.reliability'|translate}}
                     </p>
@@ -88,15 +88,15 @@
 </div>
 
 <div class="section flex-row-center">
-    <p class="box purple-fill bullet-point space-between reliability">
+    <p class="box purple-fill bullet-point space-between reliability hidden">
         {{'app.home.subtitle.reliability'|translate}}
     </p>
     <div class="space-between">
-        <h2 class="page-title text-center">
+        <h2 class="page-title text-center hidden">
             {{'app.home.title.advantages'|translate}}
         </h2>
 
-        <ul>
+        <ul class="hidden">
             <li class="page-subtitle" *ngFor="let point of advantagesList">
                 {{point|translate}}
             </li>

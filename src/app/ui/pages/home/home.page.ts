@@ -13,6 +13,8 @@ export class HomePage implements OnInit {
   arrowRightImg: string = 'assets/arrow-right.png';
   checkImg: string = 'assets/check.png';
 
+  debounceTimer: any;
+
   advantagesList = [
     'app.home.point1.advantages',
     'app.home.point2.advantages',
@@ -24,6 +26,9 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.addEventListener('scroll', animate, true);
+    window.addEventListener('scroll', () => {
+      window.clearTimeout(this.debounceTimer);
+      this.debounceTimer = setTimeout(animate, 300)
+    }, true);
   }
 }
