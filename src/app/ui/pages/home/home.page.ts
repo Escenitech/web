@@ -28,7 +28,7 @@ export class HomePage implements OnInit {
   ngOnInit() {
     window.addEventListener('scroll', () => {
       window.clearTimeout(this.debounceTimer);
-      this.debounceTimer = setTimeout(animate, 300)
+      this.debounceTimer = setTimeout(animate, 200)
     }, true);
   }
 }

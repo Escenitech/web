@@ -99,15 +99,18 @@
   margin: 20px 10px;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .with-background {
   background: url('../../../../assets/escenitech-web.jpg') 100% 40% / cover no-repeat;
   padding-bottom: 50px;
 }
 
 .zoom-in {
-  overflow: hidden;
   animation-name: zoomIn;
-  animation-duration: 40s;
+  animation-duration: 30s;
   animation-fill-mode: forwards;
 }
 

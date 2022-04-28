@@ -30,11 +30,11 @@ export function animate() {
       }
     }
 
-    for (var i = 0; i < background.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = background[i].getBoundingClientRect().top;
-      if (elementTop < windowHeight - elementVisible) {
-        background[i].classList.add("zoom-in");
-      }
-    }
+    // for (var i = 0; i < background.length; i++) {
+    //   var windowHeight = window.innerHeight;
+    //   var elementTop = background[i].getBoundingClientRect().top;
+    //   if (elementTop < windowHeight - elementVisible) {
+    //     background[i].classList.add("zoom-in");
+    //   }
+    // }
 }
