@@ -26,9 +26,17 @@
     flex-wrap: wrap;
 }
 
+.hide-img {
+    display: none;
+}
+
+.show-img {
+    display: block;
+}
+
 .dn-img {
-    height: 500px;
-    max-width: 25%;
+    height: 60%;
+    max-width: 30%;
     margin: 20px;
     box-shadow: 5px 5px 4px #a1a0a0;
 }

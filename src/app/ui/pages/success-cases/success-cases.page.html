@@ -5,8 +5,13 @@
             {{'app.success-cases.page.delivery-note.description'|translate}}
         </p>
 
-        <div class="img-wrapper">
+        <!-- <div class="img-wrapper">
             <img class="dn-img" *ngFor="let img of deliveryNoteImgs" [src]="img" alt="">
+        </div> -->
+        <div class="w3-content w3-display-container img-wrapper">
+            <img class="dn-img hide-img" *ngFor="let img of deliveryNoteImgs" [src]="img" alt="">
+            <button class="w3-button w3-black w3-display-left" (click)="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" (click)="plusDivs(1)">&#10095;</button>
         </div>
     </div>
 
