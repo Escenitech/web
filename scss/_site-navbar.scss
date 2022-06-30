@@ -358,7 +358,7 @@
 		transition: .3s all ease;
 	}
 	.site-navbar {
-		border-bottom: 1px solid rgba($white, .2);
+		//border-bottom: 1px solid rgba($white, .2);
 		.site-menu-toggle {
 			color: $white;
 		}
@@ -369,7 +369,7 @@
 				align-items: center;
 				font-family: $font-family-escenit;
 				img{
-					margin-right: 8px;
+					margin-right: 16px;
 				}
 			}
 		}
