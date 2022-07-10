@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -60,12 +60,12 @@
                   <a href="#about-section" class="nav-link">Sobre nosotros</a>
                   <ul class="dropdown">
                     <li><a href="#filosofia-section" class="nav-link">Filosofía</a></li>
-                    <li><a href="#team-section" class="nav-link">Equipo</a></li>
+                    <!--<li><a href="#team-section" class="nav-link">Equipo</a></li>-->
                     <li><a href="#faq-section" class="nav-link">Por qué nosotros</a></li>
                   </ul>
                 </li>
                 <li><a href="#services-section" class="nav-link">Servicios</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonios</a></li>
+                <!--<li><a href="#testimonials-section" class="nav-link">Testimonios</a></li>-->
                 <li><a href="#contact-section" class="nav-link">Contacto</a></li>
                 <li><a href="#kitdigital-section" class="nav-link">KIT DIGITAL</a></li>
               </ul>
@@ -198,7 +198,7 @@
 
 
 
-    <section class="site-section border-bottom" id="team-section">
+    <!--<section class="site-section border-bottom" id="team-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-8 text-center">
@@ -285,7 +285,7 @@
 
         </div>
       </div>
-    </section>
+    </section>-->
 
 
     <section class="site-section bg-light" id="faq-section">
@@ -410,7 +410,7 @@
       </div>
     </section>
 
-    <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
+   <!-- <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -476,7 +476,7 @@
           </div>
 
         </div>
-    </section>
+    </section>-->
 
 
 
@@ -605,31 +605,58 @@
             </div>
           </div>
         </div>
-      </div>
+
     </section>
 
-    <section class="site-section bg-light" id="contact-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contacto</h2>
+    <section class="site-section" id="contact-section" >
+      <div class="contact1">
+        <div class="container-contact1">
+          <div class="contact1-pic js-tilt" data-tilt data-aos="fade-right">
+            <img src="images/img-01.png" alt="IMG">
           </div>
+    
+          <form class="contact1-form validate-form " id="contactForm" data-aos="fade-left">
+            <span class="section-title contact1-form-title">
+              Contacto
+            </span>
+    
+            <div class="wrap-input1 validate-input" data-validate = "Indique su nombre o el de su empresa">
+              <input class="input1" type="text" name="name" placeholder="Nombre">
+              <span class="shadow-input1"></span>
+            </div>
+    
+            <div class="wrap-input1 validate-input" data-validate = "Indique un email válido: : ex@abc.xyz">
+              <input class="input1" type="text" name="email" placeholder="Email">
+              <span class="shadow-input1"></span>
+            </div>
+    
+            <div class="wrap-input1 validate-input" data-validate = "Indique el asunto">
+              <input class="input1" type="text" name="subject" placeholder="Asunto">
+              <span class="shadow-input1"></span>
+            </div>
+    
+            <div class="wrap-input1 validate-input" data-validate = "Indique el mensaje">
+              <textarea class="input1" name="message" placeholder="Mensaje"></textarea>
+              <span class="shadow-input1"></span>
+            </div>
+    
+            <div class="container-contact1-form-btn">
+              <button class="btn btn-primary mr-2 mb-2">
+                <span>
+                  Enviar Correo
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <p class="mb-0">
+                  <a href="mailto:info@escenit.com">info@escenit.com</a>
+                </p>
+              </div>
+            </div>    
+          </form>
         </div>
-
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <a href="#">info@escenit.com</a>
-            </p>
-          </div>
-        </div>
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <p class="lead" data-aos="fade-up" data-aos-delay="100">Si desea ponerse en contacto con la empresa puede hacerlo a través de nuestro correo electrónico, resolveremos cualquier duda o nos pondremos en contacto con usted.</p>
-          </div>
-        </div>
-        <div class="row mb-5"></div>
       </div>
     </section>
 
@@ -649,7 +676,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#about-section" class="smoothscroll">Sobre nosostros</a></li>
                   <li><a href="#services-section" class="smoothscroll">Servicios</a></li>
-                  <li><a href="#testimonials-section" class="smoothscroll">Testimonios</a></li>
+                  <!--<li><a href="#testimonials-section" class="smoothscroll">Testimonios</a></li>-->
                   <li><a href="#contact-section" class="smoothscroll">Contacto</a></li>
                   <li><a href="#kitdigital-section" class="smoothscroll">KIT DIGITAL</a></li>
                 </ul>
@@ -668,9 +695,7 @@
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                © 2022 - Escenit Media S.L
             </p>
 
             </div>
@@ -693,7 +718,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
-
+  <script src="js/tilt.jquery.min.js"></script>
 
   <script src="js/main.js"></script>
 
